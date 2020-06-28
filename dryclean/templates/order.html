@@ -1,0 +1,175 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea, email {
+  width: 70%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.order1{font-family:Constantia;font-size:45px;text-align:center;font-family:Constantia;}
+.form-control{width:380px;height:42px;font-family:Constantia;}
+.name1{font-size:30px;font-family:Constantia;}
+.tide{font-family:Constantia;font-size:20px;}
+ input.largerCheckbox { 
+            width: 30px; 
+            height: 30px; 
+        } 
+		
+		input[type=radio] {
+    border: 0px;
+    width: 6%;
+    height: 1em;
+}
+.st{font-family:Constantia;font-size:30px;}
+.check{font-family:Constantia;}
+.sub5{text-align:center;font-family:Constantia;font-size:45px;}
+
+</style>
+<div class="row" id="sdetail">
+<br>
+<br>
+<br>
+<h3 class="about"><b><span style="color:#33adff"> ORDER NOW  </b> </span></h3>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div class="container">
+
+<br>
+
+<div class="col-md-6">
+
+<form action="/insertorder" method="post">
+{% csrf_token %}
+     
+        <label><b>Name</b></label>
+        <input type="text" id="name" name="name"  class="form-control" placeholder="Your name.."pattern="[A-Za-z ]*" required />>
+		
+		<label  ><b>Phone No.</b></label>
+        <input type="text" id="phone" name="phone"  class="form-control" placeholder="Your Phone No.." pattern="[6|7|8|9|[0-9]{9}" />>
+		
+	   <label ><b>E-mail</b></label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Your E-mail..">
+		<br>
+		
+		<label  for="date"><b>Pick-Up Date</b></label>
+		<input type="date" id="date" name="pickupdate" class="form-control">
+		<br>
+		<label for="date"><b>Delivery Date</b></label>
+		<input type="date" id="date" name="deliverydate" class="form-control">
+<br>
+		<!-- Material checked-->
+		<label ><b> Services</b></label>
+		
+<br>
+Dry Cleaning <input type="checkbox" name="materialChecked2" value="Dry Cleaning" />
+Laundry <input type="checkbox"  name="materialChecked2" value="Laundry"/>
+Ironing <input type="checkbox" name="materialChecked2" value="Ironing"/>
+ 
+  <br>
+  <br>
+ 
+<label   ><b>Special Instructions </b></label>
+  <input type="text"  class="form-control" id="instructions" name="instructions" placeholder="Example: Wash whites with hot water...">  
+
+	 </div>
+<div class="col-md-6">
+<label  for="adress"><b>Address</b></label>
+	<input type="text" id="address" name="address"  class="form-control" placeholder="Street Address..">
+		
+<label>Preferred Laundry Detergent:</label>
+       <br><b>
+       Tide              <input type="radio" name="laundry" value="Tide" />
+       All Free & Clear  <input type="radio" name="laundry" value="all free" />
+       Gain               <input type="radio" name="laundry" value="gain"/></b>
+      <br>
+		<br>
+		
+<label ><b>Bleach Whites:</b></label>
+				<br><b>
+	   Yes		<input type="radio"  name="bleachwhites" value="yes" />
+	   No       <input type="radio"  name="bleachwhites" value="no" /></b>
+		<br>
+        <br>
+		
+<label >No .of items</label>
+		 <select class="form-control" name="item">
+		 <option value="">-select-</option>
+		 <option> 1</option>
+		 <option>2</option>
+		 <option>3</option>
+		 <option>4</option>
+		 <option>5</option>
+		 </select>
+        <input type="text" id="description" name="description" class="form-control" placeholder="Enter your description..."><br>
+
+<label ><b>Laundry Bag Needed?</b></label>
+			<br><b>
+        Yes		<input type="radio"  name="bag" value="yes" />
+	    No      <input type="radio"   name="bag" value="no" /></b>
+		<br>
+        <br>
+		</div>
+ <input type="submit"  class="btn btn-success" value="send" />
+ <input type="reset"  class="btn btn-danger" value="clear" />
+
+		</form>
+	</div>	
+      <br>
+	  <br>
+
+
+{% endblock %} 

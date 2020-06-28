@@ -1,0 +1,100 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 20/03/2020 14:21
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-suit-1:before { content: "\f100"; font-size: 4em; }
+.flaticon-jacket:before { content: "\f101"; }
+.flaticon-jacket-1:before { content: "\f102"; }
+.flaticon-denim-jacket:before { content: "\f103"; }
+.flaticon-life-jacket:before { content: "\f104"; }
+.flaticon-shorts:before { content: "\f105"; }
+.flaticon-clothes:before { content: "\f106"; }
+.flaticon-shirt:before { content: "\f107"; }
+.flaticon-polo-shirt:before { content: "\f108"; }
+.flaticon-tie:before { content: "\f109"; }
+.flaticon-tie-1:before { content: "\f10a"; }
+.flaticon-window:before { content: "\f10b"; }
+.flaticon-buildings:before { content: "\f10c"; }
+.flaticon-single-bed:before { content: "\f10d"; }
+.flaticon-single-bed-1:before { content: "\f10e"; }
+.flaticon-blanket:before { content: "\f10f"; }
+.flaticon-bed:before { content: "\f110"; }
+.flaticon-wedding-dress:before { content: "\f111"; }
+.flaticon-cap:before { content: "\f112"; }
+.flaticon-skirt:before { content: "\f113"; }
+.flaticon-skirt-1:before { content: "\f114"; }
+.flaticon-jeans:before { content: "\f115"; }
+.flaticon-lifejacket:before { content: "\f116"; }
+.flaticon-wicker-basket:before { content: "\f117"; }
+.flaticon-shopping-basket:before { content: "\f118"; }
+.flaticon-package:before { content: "\f119"; }
+.flaticon-pickup-car:before { content: "\f11a"; }
+.flaticon-laundry:before { content: "\f11b"; }
+.flaticon-iron:before { content: "\f11c"; }
+.flaticon-iron-1:before { content: "\f11d"; }
+    
+    $font-Flaticon-suit-1: "\f100";font-size: 4em;
+    $font-Flaticon-jacket: "\f101";
+    $font-Flaticon-jacket-1: "\f102";
+    $font-Flaticon-denim-jacket: "\f103";
+    $font-Flaticon-life-jacket: "\f104";
+    $font-Flaticon-shorts: "\f105";
+    $font-Flaticon-clothes: "\f106";
+    $font-Flaticon-shirt: "\f107";
+    $font-Flaticon-polo-shirt: "\f108";
+    $font-Flaticon-tie: "\f109";
+    $font-Flaticon-tie-1: "\f10a";
+    $font-Flaticon-window: "\f10b";
+    $font-Flaticon-buildings: "\f10c";
+    $font-Flaticon-single-bed: "\f10d";
+    $font-Flaticon-single-bed-1: "\f10e";
+    $font-Flaticon-blanket: "\f10f";
+    $font-Flaticon-bed: "\f110";
+    $font-Flaticon-wedding-dress: "\f111";
+    $font-Flaticon-cap: "\f112";
+    $font-Flaticon-skirt: "\f113";
+    $font-Flaticon-skirt-1: "\f114";
+    $font-Flaticon-jeans: "\f115";
+    $font-Flaticon-lifejacket: "\f116";
+    $font-Flaticon-wicker-basket: "\f117";
+    $font-Flaticon-shopping-basket: "\f118";
+    $font-Flaticon-package: "\f119";
+    $font-Flaticon-pickup-car: "\f11a";
+    $font-Flaticon-laundry: "\f11b";
+    $font-Flaticon-iron: "\f11c";
+    $font-Flaticon-iron-1: "\f11d";

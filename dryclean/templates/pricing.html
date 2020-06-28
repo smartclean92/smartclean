@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: #ebebe0;;
+  transition: transform .2s;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(0.9); 
+}
+/*our price list*/
+.plist{font-size:55px;text-align:center;font-family:Arial;}
+.p{font-family:Arial; text-align:center;font-size:20px;}
+
+.pr{font-size:20px;}
+
+/*contaoner class style*/
+
+.name{text-align:center;font-family:Arial;}
+
+
+
+/*zoom2*/
+
+* {
+  box-sizing: border-box;
+}
+
+.zoom1 {
+  padding: 0px;
+  background-color: 
+  transition: transform .2s;
+  width: 190px;
+  height: 210px;
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(0.9); 
+}
+
+.features{margin-block-end:40px;}
+
+
+</style>
+
+<div class="row" id="pricedetail">
+
+
+
+<br>
+<br>
+<br>
+<br>
+<h3 class="about"><b><span style="color:#33adff"> ORDER NOW </b> </span></h3>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+
+<div class="col-md-10 col-md-offset-1">
+<h3 class="price"><b>Pricing Plan</b></h3>
+<h3 class="treat">We treat pieces of clothing by their authenticity and quality. Whatever the kind of articles of clothing, for instance, fabric, white's,
+upholstery, mats, and floor covers we treat them freely. Endeavor our organizations once and we know you will stay with us!</h3>
+<br>
+<br>
+
+</div>
+	
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+
+<div class="col-md-4">
+<div class="zoom">
+<div class="col-md-12 wash">
+<h2 class="h2"><img src="{% static 'bask.jpg' %}" height="80" width="90" /></h2>
+<h2 class="ph"><b>One week Wash</b></h2>
+<h2 class="use">  Rs.500 / use</h2>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Detergent Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Dryer Sheets Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Fabric Softener Included </ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Unlimited Use </ul>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="zoom">
+<div class="col-md-12 wash">
+<h2 class="h2"><img src="{% static 'bask.jpg' %}" height="80" width="90" />
+<h2 class="ph"><b>One month Wash</b></h2></h2>
+<h2 class="use"> Rs.1000 / use</h2>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Detergent Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Dryer Sheets Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Fabric Softener Included</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Unlimited Use</ul>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="zoom">
+<div class="col-md-12 wash">
+<h2 class="h2"><img src="{% static 'bask.jpg' %}" height="80" width="90" /></h2>
+<h2 class="ph"><b>Six Month Wash</b></h2>
+<h2 class="use">  Rs.5000 / use</h2>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Detergent Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Dryer Sheets Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Fabric Softener Included</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Unlimited Use</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="col-md-offset">
+<h3 class="plist"><b>Our <span style="color:#33adff">Item</span> Lists</b></h3>
+<p class="p">In this Item lists you can found all items and prices in details</p>
+</div>
+<br>
+<br>
+
+
+<div class="row" id="product">
+<div class="price-list col-md-10 col-md-offset-1" id="price-list-one">
+{% for pl in products %}
+                    <div class="col-md-3">
+				    <div class="zoom1">
+                    <div class="col-md-12 features">
+                    <h3 class="flat"><span  class="flaticon-{{ pl.product }}" name="product"></span></h3>
+                    <div class="name" name="name"><h4><b>{{ pl.name }}</b></h4></div>
+		     		<p class="name" name="price">Wash-Rs. {{ pl.price }}</p>
+					<p class="name"name="price2">Wash & Iron-Rs. {{ pl.price2 }}</p>
+					<form action="{%  url  'cart:cart_add' pl.id  %}" method="post">
+					{% csrf_token %}
+					{{ cart_product_form }}
+					
+                                
+                               
+                            <input type="submit" value="select Item" class="btn btn-primary">
+                            </form>
+							
+                    </div>
+					</div> 
+					
+				     </div>
+					 
+					
+				{% endfor %} 		
+</div>				
+</div>
+<br>
+<br>
+
+
+
+{% endblock %}

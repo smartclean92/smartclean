@@ -1,0 +1,365 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom1 {
+  padding: 0px;
+  background-color: 
+  transition: transform .2s;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(0.9); 
+}
+</style>
+<div class="slider row">
+  <div class="item">
+  <img src="{% static 'c3.jpg' %}">
+  </div>
+  <div class="item">
+  <img src="{% static 'u.jpg' %}">
+  </div>
+  <div class="item">
+  <img src="{% static 'iron.jfif' %}">
+  </div>
+  <div class="item">
+  <img src="{% static 'coat.jpg' %}">
+  </div>
+  </div>
+  
+  <!--new row-->
+<div class="row text-center" id="text">
+  <div class="col-md-12">
+  <h2 class="dryclean"><b>HOW <span style="color:#33adff"> LAUNDRY & DRY CLEANING</span> WORKS</b></h2>
+  <p class="fabric">Laundry is a group of clothes that are being washed,or a place where clothing and other fabrics are washed or cleaned. Book Now amd Avail Great Discounts on your Next Order</p> 
+<br>
+ </div>
+  
+   <div class="col-md-12 text-center">
+   <div class="col-md-10 col-md-offset-1">
+  <div class="col-md-3">
+  <div class="col-md-12 features">
+  <div class="zoom1">
+  <img src="{%  static 'pickup1.jpg' %}"height="150" width="70%" class="img-circle"/>
+  </div>
+  <h2><b>Free Pick Up</b></h2>
+  </div>
+  </div>
+
+  <div class="col-md-3">
+  <div class="col-md-12  features">
+  <div class="zoom1">
+  <img src="{%  static 'shirt.jfif' %}"height="140" width="70%" class="img-circle" />
+  </div>
+  <h2><b>Wash and Dry</b></h2>
+  </div>
+  </div>
+
+  <div class="col-md-3">
+  <div class="col-md-12 features">
+  <div class="zoom1">
+  <img src="{%  static 'iron.jpg' %}"height="150" width="70%" class="img-circle" />
+  </div>
+  <h2><b>Fold and Iron</b></h2>
+  </div>
+  </div>
+
+  <div class="col-md-3">
+  <div class="col-md-12 features">
+  <div class="zoom1">
+  <img src="{%  static 'deli1.jpg' %}"height="150" width="70%" class="img-circle" />
+  </div>
+  <h2><b>Free Delivery</b></h2>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div> 
+  <!----new row-->
+  <div class="row" id="subcontent1">
+  <div class="col-md-12">
+  <h3 class="heading"><b>Why Choose<span style="color:#33adff"> Laundry & Dry Cleaning</b> </span></h3>
+  <h3 class="content"> Just drop of your clothes at any our stores or request for pick up online.We will do the rest! We wash dry & iron your clothes,you just have to ask.</h3>
+  <br>
+  </div>
+  <div class="col-md-12">
+   
+  <div class="col-md-3">
+  <div class="col-md-12 why">
+ <h3 class="choose"><img src="{%  static 'high.png' %}"height="50" width="50%" ></h3>
+		<h3 class="choose"><span style="color:#33adff"><b>High Quality</b></span></h3>
+		<p class="choose">We provide high quality laundry service for Spotless Business Reputation.we serves diverse sectors with qulaity.</p>
+  </div>
+  </div>
+
+  <div class="col-md-3">
+  <div class="col-md-12 why">
+ <h3 class="choose"><img src="{%  static 'w1.jpg' %}"height="50" width="50%" ></h3>
+		<h3 class="choose"><span style="color:#33adff"><b>Best Equipments</b></span></h3>
+		<p class="choose">"No blending of garments.Ultra-clean lundomats with extraodinary bunding to keep up freshnesss."</p>
+  </div>
+  </div>
+
+  <div class="col-md-3">
+  <div class="col-md-12 why">
+ <h3 class="choose"> <img src="{%  static 'h1.jfif' %}"height="50" width="50%" ></h3>
+  <h3 class="choose"><span style="color:#33adff"><b>Hygienic</b></span></h3>
+		<p class="choose">No blending of garments.Ultra-clean laundromats with extraordinary bunding to keep up freshness.</p>
+		
+  </div>
+  </div>
+
+  <div class="col-md-3">
+  <div class="col-md-12 why">
+  <h3 class="choose"><img src="{%  static 'pro.png' %}"height="50" width="50%" ></h3>
+  <h3 class="choose"><span style="color:#33adff"><b>Professional</b></span></h3>
+		<p class="choose">No blending of garments.Ultra-clean laundromats with extraordinary bunding to keep up freshness.</p>
+</div>
+</div>	
+</div>
+</div>
+ 
+  
+  <!---new row-->
+  <div class="col-md-10 col-md-offset-1">
+  <div class="col-md-12 service">
+  <h3 class="our"><b>OUR <span style="color:#33adff"> SERVICES </span></b></h3>
+  <p> Just drop of your clothes at any our stores or request for pick up online.We will do the rest! We wash dry & iron your clothes,you just have to ask.</p>
+  <br>
+  </div>
+  </div>
+  <div class="col-md-10 col-md-offset-1" id="radius"> 
+  <div class="col-md-4">
+  <div class="col-md-12 border">
+  <img src="{%  static 'machine.jpg' %}"height="200" width="80%" class="img-rounded"/>
+  <h3><b>Drapery</b></h3>
+  <p>Dupioni silk is centuries old and has always remained a favorite as it offers the intricately woven silk yarns of varying thickness.</p>
+  </div>
+  </div>
+ 
+  <div class="col-md-4">
+  <div class="col-md-12 border">
+  <img src="{%  static 'coat.jpg' %}"height="200" width="80%" class="img-rounded"/>
+  <h3><b>Wedding Suits</b></h3>
+  <p>We know it isn't just your most costly suit yet additionally the most appreciated suit of all events. Call us and we will pick.</p>
+  </div>
+  </div>
+  
+  <div class="col-md-4">
+  <div class="col-md-12 border">
+  <img src="{%  static 'c.jfif' %}"height="200" width="80%" class="img-rounded"/>
+  <h3><b>Curtains</b></h3>
+  <p>The curtains lend a special effect to your tastefully decorated furnishings and wall paint. Often the first thing everyone.</p>
+  <br>
+  <br>
+  </div>
+  </div>
+  </div>
+  <!---new row-->
+  <div class="col-md-10 col-md-offset-1" id="subservice1">
+  <div class="col-md-4">
+  <div class="col-md-12 border">
+  <img src="{%  static 'images.jfif' %}"height="200" width="80%" class="img-rounded"/>
+  <h3><b>Dry Cleaning</b></h3>
+  <p>Dry Clean for You in Watertown is your licensed and certified dry cleaner, offering dry cleaning pick up and delivery.</p>
+  </div>
+  </div>
+  
+  <div class="col-md-4">
+  <div class="col-md-12 border">
+  <img src="{%  static 'c2.jpg' %}"height="200" width="80%" class="img-rounded"/>
+  <h3><b>Silk and Suede</b></h3>
+  <p>Every now and again support, refreshment stains and others like pen ink engravings could damage your mollified cowhide.</p>
+  </div>
+  </div>
+  
+  <div class="col-md-4">
+  <div class="col-md-12 border">
+  <img src="{%  static 'ja.jpg' %}"height="200" width="80%" alt="ja" class="img-rounded"/>
+  <h3><b>Leather Cleaning</b></h3>
+  <p>Leather garments are a chic addition to any wardrobe. While they can be pricey, with the right care they can become</p>
+  </div>
+  </div>
+  </div>
+  <!---new row-->
+  <div class="col-md-10 col-md-offset-1">
+  <div class="row" id="need">
+  <div class="col-md-12"> 
+  <h2 id="need"><b>Need More  <span style="color:#33adff"> Help</b> </span></h2>
+  <h3 class="dry">you have a workforce needing a standard Laundry and Dry Cleaning administration,
+   at that point reach us today, and we'd be pleased to talk with you about the advantages and advantages
+   of utilizing our Laundryapp at your office</h3>
+   <br>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-10 col-md-offset-1">
+  <div class="col-md-4">
+  <div class="col-md-12" id="help"> 
+  <h3 class="t2"><img src="{%  static 't1.png' %}"height="40" width="50" /> </h3>
+  <h3 class="mobile"><b>Mobile Laundry</b></h3>
+  <p class="mobile">Customers no longer have to worry about going to the laundromat,buying detergent,finding enough quarters,and killing time waiting for everything to finish</p>
+  <p class="mobnumber"><span style="color:#33adff"><b>9845602341</b></span></p>
+  </div>
+  </div>
+  
+  <div class="col-md-4">
+  <div class="col-md-12" id="help"> 
+  <h2 class="mobile1"><span class="glyphicon glyphicon-time icon-size" ></h2></span>
+  <h3 class="mobile1"><b>Trading Hours</b></h3>
+  <p class="mobile1">Monday-Friday:8:00am to 2:00pm</p>
+  <p class="mobile1">Saturday:9:00am to 6:00pm</p>
+  <p class="mobile1">Sunday:Close</p>
+  </div>
+  </div> 
+  <div class="col-md-4">
+  <div class="col-md-12" id="help"> 
+  <h2 class="mobile"><span style="color:#33adff"class="glyphicon glyphicon-question-sign icon-size"></h2></span>
+  <h3 class="mobile"><b>See our FAQs</b></h3>
+  <p class="mobile">See answers to questions on how to get our services.</p>  
+  <h3 class="mobile"><button class="b1">FAQ</button></h3>
+  </div>
+  </div>
+</div>
+</div>
+
+<!--new row-->
+<div class="row" id="backimage">
+ <div class="col-md-10 col-md-offset-1">
+<div class="col-md-12">
+<h2 class="client"><b>Client Testimonial</b></h2>
+<h3 class="customer">Customer satisfaction Drives us</h3>
+<br>
+<br>
+</div>
+</div>
+
+<div class="col-md-10 col-md-offset-1">
+<div class="col-md-4"  >
+<div class="col-md-12 test">
+<h2 class="person"><img src="{% static 'face.jfif' %}" height="95" width="95" class="img-circle" /></h2> 
+<h3 class="person"><b>Michel Jorden</b></h3>
+<p class="person">Very good service! and they always polite and quick turn around between pick up and drop of! would definately recommend from them !!</p>
+</div>
+</div>
+
+<div class="col-md-4" >
+<div class="col-md-12 test">
+<h2 class="person"><img src="{% static 'face1.jfif' %}" height="95" width="95" class="img-circle" /></h2>
+<h3 class="person"><b>Jasika</b></h3>
+<p class="person">I am highly impressed by the professionals these  girls they not only picked it from my doorstep but also delivered it within the given time.</p>
+</div>
+</div>
+
+<div class="col-md-4" >
+<div class="col-md-12 test">
+<h2 class="person"><img src="{% static 'face3.jfif' %}" height="95" width="95" class="img-circle"/></h2>
+<h2 class="person"><b>Din Rechard</b></h2>
+<p class="person">These guys are great my favorite coat was stained and i needed back for my job interview on the next day. as they promised 1 got my coat on time.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<!---new row-->
+<div class="col-md-10 col-md-offset-1">
+<div class="col-md-12">
+<div class="row" >
+<h3 class="price"><b>Pricing Plan</b></h3>
+<h3 class="treat">We treat pieces of clothing by their authenticity and quality. Whatever the kind of articles of clothing, for instance, fabric, white's,
+upholstery, mats, and floor covers we treat them freely. Endeavor our organizations once and we know you will stay with us!</h3>
+<br>
+<br>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="col-md-4">
+<div class="col-md-12 wash">
+<h2 class="h2"><img src="{% static 'cloth.jpg' %}" height="70" width="80" /></h2>
+<h2 class="ph"><b>One Month Wash</b></h2>
+<h2 class="use">  Rs.199 / use</h2>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Detergent Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Dryer Sheets Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Fabric Softener Included </ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Unlimited Use </ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="col-md-12 wash">
+<h2 class="h2"><img src="{% static 'cloth.jpg' %}" height="70" width="80" />
+<h2 class="ph"><b>One year Wash</b></h2></h2>
+<h2 class="use"> Rs.499 / use</h2>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Detergent Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Dryer Sheets Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Fabric Softener Included</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Unlimited Use</ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="col-md-12 wash">
+<h2 class="h2"><img src="{% static 'cloth.jpg' %}" height="70" width="80" /></h2>
+<h2 class="ph"><b>Six Month Wash</b></h2>
+<h2 class="use">  Rs.299 / use</h2>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Detergent Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Dryer Sheets Include</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Fabric Softener Included</ul>
+<ul class="list text-left"><span class="glyphicon glyphicon-ok" id="icon"></span>  Unlimited Use</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-offset" id="blog">
+<div class="row">
+<h3 div class="our"><b>Our Blog</b></h3>
+<p class="outdoors">In this blog you will find laundry solutions for stressed out moms. Rotary clotheslines offer you one
+of the simplest and cheapest ways to dry clothes and laundry outdoors.</p>
+<br>
+<br>
+</div>
+
+ <div class="row">
+   <div class="col-md-10 col-md-offset-1">
+  <div class="col-md-4">
+  <div class="col-md-12 tips">
+ <h3 class="smoke"><img src="{%  static 'm.jpg' %}"height="120" width="90%" ></h3>
+		<h3><span style="color:#33adff"><b>101 Lanundry tips, tricks and hacks</b></span></h3>
+		<p class="smell">When it comes to laundry, we know a thing or two.here a list of 101 of our favourite tips,tricks and hacks to help make getting the.....</p>
+  </div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="col-md-12 tips">
+ <h3 class="smoke"><img src="{%  static 'images.jfif' %}"height="140" width="90%" ></h3>
+		<h3><span style="color:#33adff"><b>Dry cleaning saves money in the long run</b></span></h3>
+		<p class="smell">People are often relcutant to dry clean their clothing because it is more expensive...</p>
+  </div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="col-md-12  tips">
+ <h3 class="smoke"> <img src="{%  static 'men.jfif' %}"height="140" width="90%" ></h3>
+  <h3><span style="color:#33adff"><b>How to get rid of smoke odor on clothes</b></span></h3>
+		<p class="smell">We all know that smell.the one that lingers after a night our bar hopping,dinner....</p>		
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+{% endblock %}

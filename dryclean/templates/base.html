@@ -1,0 +1,170 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>Laundry & Dry Cleaning Services</title>
+<link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css'%}"type="text/css"rel="stylesheet"/>
+<link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap-theme.min.css'%}"type="text/css"rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="{% static 'bxslider-4-4.2.12/dist/jquery.bxslider.min.css' %}"/>
+<link href="{% static 'laundrystyle.css' %}" type="text/css" rel="stylesheet"/>
+<script src="{% static 'bootstrap-3.3.7-dist/jquery.js' %}"></script>
+<script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+<script src ="{% static 'bxslider-4-4.2.12/dist/jquery.bxslider.min.js' %}"></script>
+<script src="{% static 'multislider/js/multislider.min.js'%}"></script>
+<link  href="{% static 'font/flaticon.css' %}"  type="text/css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<style>
+
+#header{background-color:white;font-size:20px; word-spacing:10px; padding:15px 15px 15px 15px;text-align:center; margin-left:270px; }
+#nav a{color:#6699ff; }
+#font{font-size:35px;}
+#nav a:hover{color:rgb(0, 0, 0);}
+#nav1 a:hover{color:rgb(0, 0, 0);}
+.nav1{color:#33adff;}
+.item img{height:100% !important; width:100%}
+.mobnumber{font-family:Arial;}
+.mobile1{font-size:18px;}
+.icon-size{font-size:1.5em;}
+#footer{background-color:black;background-image:url('stream.jpg');}
+.footerhead{color:#4d94ff;font-size:25px;font-weight:bold;padding-top:30px;}
+.footerend{color:#4d94ff;font-size:25px;font-weight:bold;text-align:center;padding-top:20px;border-top:1px ridge #f2f2f2;padding:10px;}
+#column{padding-top:30px;color:white;padding-left:50px;}
+.li:hover{color:#4d94ff;}
+.li{font-size:17px;color:white;margin:30px;margin-left:0px;}
+.ul2:hover{color:#4d94ff;}
+.ul2{font-size:17px;color:white; margin:40px;text-align:left;padding-left:0px;margin-left:0px;border-bottom:1px ridge #f2f2f2;}
+
+#ldc3{text-align:left;background-color: #6c96ff;} 
+#content{text-align:center; background-color:black;padding: 15px 15px;}
+.faa{color:white;font-size:30px;padding:30px 30px;}
+.ltr2{color:white;font-size:22px;font-family:Arial;}
+.fa{color:white;font-size:20px ;}
+
+
+.h12 {
+  
+   border: 3px solid;
+		
+	border-radius: 25px;
+ border-color: #6699ff;
+  background-color:#6699ff;
+
+}
+
+
+
+</style>
+
+
+			
+<div class="row" id="ldc3">
+<div class="col-md-6"><h3><img src="{%  static 'newlogo.jpg' %}"height="100" width="70%"></h3></div>
+
+<div class="col-md-3" id="text">
+<h3 class="faa"><i class="fa fa-envelope">   smartcleanlaundry6@gmail.com</i></h3>
+<h3</h3>
+<br>
+</div>
+
+
+<div class="col-md-3" id="text">
+<h3 class="faa"><i class="fa fa-phone">   Wants a launder?<br>
+      9781092592
+ </i></h3>
+</div>
+</div>
+
+
+
+<div class="row" id="header">
+
+<nav class="navbar-inverse" id="nav">
+<ul class ="nav navbar-nav">
+<li><a href="/login/"><b>LOGIN</b></a> </li>
+<li><a href="/homelaundry/"><b>HOME</b></a> </li>
+<li><a href="/about1/"><b>ABOUT US</b></a> </li>
+<li><a href="/pages/"><b>FAQ</b></a> </li>
+<li><a href="/services/"><b>SERVICES</b></a> </li>
+
+<li><a href="/ourblog/"><b>BLOG</b></a> </li>
+<li><a href="/feedback/"><b>FEEDBACK</b></a> </li>
+
+
+<li><a class="h12" href="/pricing/"style="color:black"><b>ORDER NOW</b></a> </li>
+
+</ul>
+</nav>
+</div>
+
+
+
+{% block content %}
+{% endblock %}
+
+
+
+
+<div class="row" id="footer">
+<div class="col-md-3" id="column">
+<h1 class="head">Smart Clean</h1>
+<p>Dry-cleaning  and  Laundry business is  profitable  business now-a-days </p>
+<p class="pichead"><a href="https://www.facebook.com/"><img src="{% static 'fa.jpg' %}" height="30" width="30" class="img-circle"/> </a> 
+ <a href="https://twitter.com/login"><img src="{% static 'instagram.jpg' %}" height="30" width="30"class="img-circle"/></a>
+ <a href="https://www.instagram.com/"><img src="{% static 'in.jpg' %}" height="30" width="30"class="img-circle"/></p></a>
+</div>
+
+<div class="col-md-3">
+<h2 class="footerhead">SERVICES</h2>
+<li class="li"><span class="blue"> Free pick-up and delivery</span></li>
+<li class="li">High quality</li>
+<li class="li">dry cleaning</li>
+<li class="li">Slik and suede</li>
+</div>
+
+
+<div class="col-md-3" >
+<h2 class="footerhead">OUR BLOG</h2>
+<ul class="ul2"><span class="blue">Dry cleaning tips for suits</span></ul>
+<ul class="ul2">tips of maintaining your wardrobe</ul>
+<ul class="ul2">how to care your slik clothes</ul>
+</div>
+
+<div class="col-md-3" >
+<h2 class="footerhead">INSTAGRAM</h2>
+<p><img src="{% static 'd.jfif' %}" height="60" width="90"  class="img-rounded"/>
+<img src="{% static 'd.jfif' %}" height="60" width="90"  class="img-rounded"/>
+<img src="{% static 'machine.jpg'  %}" height="60" width="90"  class="img-rounded" />
+<img src="{% static 'm.jpg'  %}" height="60" width="90"   class="img-rounded"/>
+<img src="{% static 'w.jpg'  %}" height="60" width="90"   class="img-rounded"/>
+<img src="{% static '2.jfif'  %}" height="60" width="90"   class="img-rounded"/></p>
+</div>
+
+<br>
+<h2 class="footerhead">CONTACT No.</h2>
+<h4 class="ltr2"><span style="color:#6c96ff"><b>tel.</b></span>9781092592</h4>
+<h4 class="ltr2"><span style="color:#6c96ff"><b>E-mail.</b></span>smartcleanlaundry6@gmail.com</h4>
+
+<div class="row">
+<div class="col-md-12">
+<h2 class="footerend">Smart Clean</h2>
+</div>
+</div>
+</div>
+</body>
+<script>
+$(document).ready(function(){
+
+ 
+  });
+</script>
+</html>
+
+
+
+
+
+
+
+

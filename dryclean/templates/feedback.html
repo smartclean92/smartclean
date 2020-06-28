@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class="row" id="sdetail">
+<br>
+<br>
+<br>
+<h3 class="about"><b><span style="color:#33adff"> FEEDBACK </b> </span></h3>
+<br>
+<br>
+<br>
+</div>
+ 
+
+
+<div class="row" id="contactus1">
+    <div class="column">
+      <img src="{% static 'w.jpg'  %}"  style="width:100%"  "height:190px";/> 
+    </div>
+   <div class="column" >
+<form action="/insert" method="post">
+{% csrf_token %}
+       <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+       
+		<label for="lname">Phone No.</label>
+        <input type="text" id="phone" name="phone" placeholder="Your Phone No..">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Your E-mail..">
+         <label>Subject</label>
+		 <select class="form-control" name="subject">
+		 <option value="">-select-</option>
+		 <option> suggestion</option>
+		 <option>feedback</option>
+		 <option>general</option>
+		 <option>enquiry</option>
+		 <option>complaint</option>
+		 </select>
+        
+        <label for="subject">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:140px"></textarea>
+     
+		<button class="btn btn-warning">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}

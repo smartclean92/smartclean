@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Your Laundry & Drycleaning Cart
+{% endblock %}
+
+
+{% block content %}
+<style>
+#cdt{margin-left:140px; margin-right:140px;}
+.badge{font-size:20px;background-color:blue;font-family:Times New Roman;padding:10px;10px;}
+.list{background-color:blue;color:white;font-family:Times New Roman;padding:20px 20px;}
+.flat{font-size:medium;}
+</style>
+<div class="row" id="sdetail">
+<br>
+<br>
+<br>
+<h3 class="about"><b><span style="color:black"> YOUR SELECTED ITEM  </b> </span></h3>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+ <!--<div class="container"> #33adff-->
+    <div class="col-md-offset-1" id="cdt">
+        <div class="row" style="margin-top: 6%">
+        <h2 class="list">Your Selected Item List</h2>
+		<h2><span class="badge pull-right">
+                {% with totail_items=cart|length %}
+                    {% if cart|length > 0 %}
+                        My Laundry Order:
+                        <a href="{% url "cart:cart_detail" %}" style="color: #ffffff">
+                            {{ totail_items }} item {{ totail_items|pluralize }}, Rs. {{ cart.get_total_price }}
+                        </a>
+                        {% else %}
+                        Your  Laundry cart is empty.
+                    {% endif %}
+                {% endwith %}
+            </span>
+        </h2>
+		<br>
+		<br>
+		<br>
+            <table class="table table-striped table-hover">
+                <thead style="background-color: #5AC8FA">
+
+		
+
+           
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Remove</th>
+                        <th>Unit Price</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for item in cart %}
+                    {% with product=item.product  %}
+                        <tr>
+                            <td>
+                                <a href="{{ product.get_absolute_url }}">
+								
+                                  <h3 class="flat"><span  class="flaticon-{{ product.product }}" name="product"></span></h3>
+                                </a>
+                            </td>
+                            <td>{{ product.name }}</td>
+                            <td>
+                                <form action="{% url "cart:cart_add" product.id %}" method="post">
+                                    {% csrf_token %}
+                                    {{ item.update_quantity_form.quantity }}
+                                    {{ item.update_quantity_form.update }}
+                                    <input type="submit" value="Update" class="btn btn-info">
+                                </form>
+                            </td>
+                            <td>
+                                <a href="{% url "cart:cart_remove" product.id %}">Remove</a></td>
+                            <td>Rs. {{ item.price }}</td>
+                            <td>Rs. {{ item.total_price }}</td>
+                        </tr>
+                    {% endwith %}
+                {% endfor %}
+                <tr style="background-color: #5AC8FA">
+                    <td><b>Total</b></td>
+                    <td colspan="4"></td>
+                    <td colspan="num"><b>Rs. {{ cart.get_total_price }}</b></td>
+                </tr>
+                </tbody>
+            </table>
+        <p class="text-right">
+		   
+            <a href="{% url "orders:order_create" %}" class="btn btn-primary"><b>Checkout</b></a>
+        </p>
+        </div>
+    </div>
+	<br>
+	<br>
+{% endblock %}

@@ -1,0 +1,110 @@
+#deep
+{
+background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 100%);
+}
+#deep .col-md-12
+{
+margin-top:10px;
+margin-bottom:-4px;
+padding-top:5px;
+padding-bottom:1px;
+}
+#deep .col-md-12:hover
+{
+background: linear-gradient(to right, rgba(238,226,68,1) 0%, rgba(254,171,37,1) 100%);
+}
+#deep .col-md-2
+{
+margin-top:20px;
+background: linear-gradient(to right, rgba(41,41,41,1) 0%, rgba(38,38,38,1) 0%, rgba(10,10,10,1) 0%, rgba(48,48,48,1) 0%, rgba(16,16,16,1) 84%, rgba(10,10,10,1) 100%);
+height:600px;
+}
+
+#deep1 .col-md-10
+{
+background:#CCCCCC;
+}
+#deep1 input[type=text]
+{
+background:#FFFFFF;
+}
+#deep9  img
+{
+height:40px;
+width:5%;
+border-radius:100%;
+margin-left:40px;
+}
+#deep9 i
+{
+margin-left:5px;
+
+}
+
+#deep2 label
+{
+margin-top:20px;
+margin-left:20px;
+}
+#deep2 label1
+{
+margin-left:20px;
+}
+#ss
+{
+margin-top:20px;
+}
+#ss img
+{
+height:150px;
+width:100%;
+float:left;
+padding:5px 10px 5px 5px;
+}
+#sss img
+{
+height:207px;
+width:96%;
+margin:5px 20px 5px 20px;
+}
+#deep9 input[type=text]
+{
+width:70%;
+height:50px;
+margin-left:20px;
+background:#ffffff;
+margin-top:20px;
+padding-left:34px;
+}
+#deep1 .col-md-12
+{
+background:white;
+height:50px;
+}
+#s2 h
+{
+color:#FFFFFF;
+font-size:18px;
+}
+#s2 label1
+{
+color:#00FFFF;
+font-size:18px;
+}
+#deep .col-md-2 .row label 
+{
+color:#FFFFFF;
+}
+#aman
+{
+margin-top:15px;
+margin-left:10px;
+}
+#deep9 .btn-primary
+{
+color:#000099;
+background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 100%);
+border:none;
+padding-left:5px;
+margin-top:10px;
+}

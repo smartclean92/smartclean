@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Your Laundry & Drycleaning Cart| Checkout
+{% endblock %}
+
+{% block content %}
+<style>
+#cout{background-color:#6699ff;margin-left:140px; margin-right:140px;padding:20px 20px;}
+.page-header{font-family:Times New Roman;font-size:40px;color:black;}
+ 
+</style>
+<div class="row" id="sdetail">
+<br>
+<br>
+<br>
+<h3 class="about"><b><span style="color:black"> ORDER NOW  </b> </span></h3>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+    <div class="col-md-offset-1" id="cout">
+        <div class="row" style="margin-top: 3%">
+            <div class="col-md-8">
+                <h4 class="page-header"><b>Checkout</b></h4>
+                <form action="." method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}<br>
+                    <input type="submit" class="btn btn-primary" value="Submit order">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="page-header">
+                   <b> Your Order</b>
+                </div>
+                <ul class="list-group">
+                    {% for item in cart %}
+                        <li class="list-group-item">
+                        {{ item.quantity }}x {{ item.product.name }}
+                        <span>Rs. {{ item.total_price }}</span>
+                        </li>
+                    {% endfor %}
+
+                <li class="list-group-item active">Total Cost: Rs.{{  cart.get_total_price }} </li>
+                </ul>
+
+            </div>  
+        </div>
+    </div>
+	<Br>
+	<br>
+{% endblock %}

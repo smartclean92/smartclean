@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<style>
+
+.reg{font-family:Arial;font-size:28px;}
+.register{text-align:center;font-family:Arial;}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  height:45px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-family:Arial;
+  text-align:center;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.form-control{height:45px;background-color:white;}
+#login{background-color:#6c96ff;}
+.us{color:white;}
+</style>
+
+<div class="row" id="sdetail">
+<br>
+<br>
+<br>
+<h3 class="about"><b><span style="color: #006bb3"> LOGIN </b> </span></h3>
+<h1 class="aboutus">Home/Login</h1>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<p class="aboutus"><b>Login To Order Now</b></p>
+<br>
+<br>
+    
+
+
+<div class="container" id="login">
+    
+    
+<form action="/insert" method="post">
+
+{% csrf_token %}
+     
+	 <label class="reg" for="email">E-mail</label>
+        <input type="email" name="email" class="form-control" placeholder="Your E-mail.."><br>
+	 
+    <label class="reg" for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password.." name="password" class="form-control" required><br>
+
+    
+
+   <h1 class="register"> <a href="http://127.0.0.1:8000/homelaundry/"class="button" class="registerbtn"><b>LOGIN</b></button></h1>
+  </div>
+  
+  <div class="container signin" id="login">
+    <p class="aboutus">New user<a class="us" href="#">Sign up</a></p>
+  </div>
+</form>
+<br>
+<br>
+
+{% endblock %}

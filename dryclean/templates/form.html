@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<html>
+<head>
+<link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css'%}"type="text/css"rel="stylesheet"/>
+<link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap-theme.min.css'%}"type="text/css"rel="stylesheet"/>
+<link href="{% static 'style.css'%}"type="text/css"rel="stylesheet"/>
+</head>
+<body id="form">
+<div class="container"  >
+<div class="col-md-8 col-md-offset-2" id="formbackgound" >
+<form enctype="multipart/form data" action="" method="" >
+<h1 id="heading">RESGISTRATION FORM</h1>
+<label>Name</label>
+<input type="text" class="form-control" placeholder="enter your name" pattern="[A-Za-z ]*" required />
+<label>Father's Name</label>
+<input type="text" class="form-control" placeholder="enter your name" pattern="[A-Za-z ]*" required />
+<label>Mother's Name</label>
+<input type="text" class="form-control" placeholder="enter your name" pattern="[A-Za-z ]*" required />
+<label for="date">date:</label>
+<input type="date" id="date" name="date">
+<label>Phone number</label>
+<input type="tel" class="form-control" pattern="[6|7|8|9|[0-9]{9}" />
+
+<label>Picture</label>
+<input type="file" class="" accept="image/*" />
+<label>Address</label>
+<textarea class="form-control"></textarea>
+<label>Email</label>
+<input type="email" class="form-control" />
+<label>Password</label>
+<input type="password" class="form-control" />
+<label> Course</label>
+<select class="form-control">
+<option value="">-select-</option>
+<option>Python</option>
+<option>PHP</option>
+<option>Java</option>
+<option>full stack</option>
+</select>
+<label>Gender</label>
+<br>
+Male   <input type="radio" name="gender" value="male" />
+female  <input type="radio" name="gender" value="female" />
+<br>
+<label> HOBBIES</label>
+<br>
+Singing <input type="checkbox" />
+dancing <input type="checkbox" />
+reading <input type="checkbox" />
+<br>
+<input type="submit" class="btn btn-success" value="send" />
+<input type="reset"  class="btn btn-danger" value="clear" />
+</form>
+</div>
+</div>
+</body>
+</html>

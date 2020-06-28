@@ -1,0 +1,225 @@
+ #icon{color:#3399ff;}
+.ul{text-align:left;margin:10px;padding-left:80px;font-size:16px;padding-top:20px;color:#a6a6a6;border-bottom:1px ridge #a6a6a6;padding:15px;}
+.h2{padding-top:30px;text-align:center;}
+.ph{font-size:18px;font-weight:bold;text-align:center;}
+#row3{text-align:center;padding:100px 30px 100px 30px; color:white;}
+.heading{text-align:center;color:#102c36; font-size:50px; font-weight:bold; padding-top:50px; }
+.content{ text-align:center;color:black; font-size:18px;margin-left:80px;margin-right:80px;margin-top:0px;padding-bottom:50px;}
+#column{padding-top:30px;color:white;padding-left:50px;}
+.head{font-weight:bold;color:white;padding-left:15px;}
+#blue{color:#005ce6;}
+
+.li:hover{color:#4d94ff;}
+.li{font-size:17px;color:white;margin:30px;margin-left:0px;}
+.ul2:hover{color:#4d94ff;}
+.ul2{font-size:17px;color:white; margin:40px;text-align:left;padding-left:0px;margin-left:0px;border-bottom:1px ridge #f2f2f2;}
+.pichead{word-spacing:40px;}
+#backimage{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('coat.jpg'); background-size:cover;padding-top:20px;padding-bottom:50px;}
+#box1{background:rgba(204, 230, 255,0.7);}
+#box2{background:rgba(204, 230, 255,0.7);}
+#box3{background:rgba(204, 230, 255,0.7);}
+#subcontent1{background-image:url('d.jfif'); background-size:cover; color:black;text-align:center;font-size:20px;padding-top:20px;}
+#radius{text-align:center;padding-top:25px;background:#f5f5f0;}
+#text{margin-bottom:20px;}
+#subservice1{background:#f5f5f0;}
+#need{text-align:center;font-size:45px; font-family:Arial;margin-top:20px;}
+#help{border:1px solid black;text-align:center;border-radius:10px;font-family:Arial;margin-bottom:30px;}
+#backimage{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('u.jpg'); background-size:cover;padding-top:20px;padding-bottom:50px;text-align:center;}
+
+#blog{text-align:center;font-size:15px;margin-bottom:30px;margin-top:20px;}
+.our{font-size:45px;}
+.fabric{font-family:Arial;font-size:18px;}
+.features{ background:#f5f5f0; border-radius:10px; padding:10px; text-align:center;font-family:Arial; }
+
+.features:hover{color:rgb(51, 173, 255);}
+.heading{font-size:45px; text-align:center;font-family:Arial;}
+.content{font-size:18px; text-align:center;font-family:Arial;}
+.dryclean{font-size:40px;font-family:Arial;text-align:center;}
+.our{font-size:45px;text-align:center;font-family:Arial;}
+.service{text-align:center;font-size:17px;}
+.border{border-radius:10px;border-color:black;text-align:center;font-family:Arial;}
+.border:hover{color:rgb(51, 173, 255);}
+.dry{font-size:20px;font-family:Arial;}
+
+.btn{background:#33adff;}
+.btn{border-radius:10px;border-color:black;text-align:center;.features{ background:#ebebe0; border-radius:10px; padding:10px; text-align:center;font-family:Times New Roman;}
+.features:hover{color:rgb(51, 173, 255);}
+.heading{font-size:45px; text-align:center;font-family:Arial;}
+.content{font-size:18px; text-align:center;font-family:Arial;}
+.dryclean{font-size:40px;font-family:Arial;}
+.our{font-size:45px;text-align:center;font-family:Arial;}
+.service{text-align:center;font-size:17px;}
+.border{border-radius:10px;border-color:black;text-align:center;font-family:Arial;}
+.border:hover{color:rgb(51, 173, 255);}
+.mobnumber{padding-bottom:10px;}
+.mobile{text-align:center;font-family:Arial;padding-bottom:20px;}
+.t2{text-align:center;padding:10px;}
+.btn{background:#33adff;}
+.b1{border-radius:10px;border-color:black;text-align:center;font-family:Arial;}
+.mobile:hover{color:rgb(51, 173, 255);}
+
+#help{background:#f5f5f0;}
+.client{color:white;font-size:45px;text-align:center;font-family:Arial;}
+#customer{color:white;text-align:center;font-family:Arial;}
+.person{color:black;text-align:center;font-size:20px;font-family:Arial;}
+.person:hover{color:rgb(51, 173, 255);}
+.price{text-align:center;font-size:45px;font-family:Arial;}
+.price:hover{color:rgb(51, 173, 255);}
+.treat{font-size:18px;text-align:center;font-family:Arial;}
+.ph{text-align:center;font-family:Arial;}
+.ph:hover{color:rgb(51, 173, 255);}
+.h2{text-align:center;font-family:Arial;}
+.h2:hover{color:rgb(51, 173, 255);}
+.use{text-align:center;font-family:Arial;}
+.use:hover{color:rgb(51, 173, 255);}
+.ul{text-align:center;font-family:Arial;text-align::justify;}
+#list text-left:hover{color:rgb(51, 173, 255);}
+.wash{background:#f5f5f0;border-radius:10px;border-color:black;font-family:Arial; box-shadow: 10px 10px;}
+.wash:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}}
+.test{background:#ebebe0;border-radius:10px;border-color:black;font-family:Arial;}
+#why{background:#f5f5f0;border-radius:10px;border-color:black;font-family:Arial;margin-bottom:20px;padding-left:25px;}
+.choose{padding-top:10px; text-align:center;font-family:Arial;}
+.tips{background:#f5f5ef; border-radius:10px;border-color:black;font-family:Arial;}
+.smoke{text-align:center;padding:10px;font-family:Arial;}
+#footer{background:black;font-family:Arial;}
+.clean{color:white;font-family:Arial;}
+.ul2{font-size:17px;color:white; margin:40px;text-align:left;padding-left:0px;margin-left:0px;border-bottom:1px ridge #f2f2f2;font-family:Times New Roman;}
+.li{color:white;font-family:Arial;}
+.libero{color:white;font-family:Arial;}
+.mobile:hover{color:rgb(51, 173, 255);}
+#help{background:#ebebe0;}
+.client{color:white;font-size:45px;text-align:center;font-family:Arial;}
+.customer{color:white;text-align:center;font-family:Arial;}
+.person{color:black;text-align:center;font-size:20px;font-family:Arial;}
+
+.person:hover{color:rgb(51, 173, 255);}
+.price{text-align:center;font-size:45px;font-family:Arial;}
+.price:hover{color:rgb(51, 173, 255);}
+.treat{font-size:18px;text-align:center;font-family:Arial;}
+.ph{text-align:center;font-family:Arial;}
+.ph:hover{color:rgb(51, 173, 255);}
+.h2{text-align:center;font-family:Arial;}
+.h2:hover{color:rgb(51, 173, 255);}
+.use{text-align:center;font-family:Arial;}
+.use:hover{color:rgb(51, 173, 255);}
+.ul{text-align:center;font-family:Arial;}
+.ul:hover{color:rgb(51, 173, 255);}
+.wash{background:#ebebe0;border-radius:10px;border-color:black;font-family:Arial;}
+.test{background:#ebebe0;border-radius:10px;border-color:black;font-family:Arial;}
+.why{background:#ebebe0;border-radius:10px;border-color:black;font-family:Arial;margin-bottom:35px;}
+.choose{padding-top:10px; text-align:center;font-family:Arial;}
+.tips{background:#f5f5ef; border-radius:10px;border-color:black;font-family:Arial;}
+.smoke{text-align:center;padding:10px;font-family:Arial;}
+.outdoors{font-family:Arial;font-size:17px;}
+.smell{font-size:18px;}
+
+.clean{color:white;font-family:Arial;}
+.head{color:white;}
+.footerhead{color:#4d94ff;font-size:25px;padding-top:30px;font-family:Arial;}
+.footerend{color:#4d94ff;font-size:40px;font-weight:bold;text-align:center;padding-top:20px;border-top:1px ridge #f2f2f2;padding:10px;font-family:Times New Roman;}
+.ul2{font-size:17px;color:white; margin:40px;text-align:left;padding-left:0px;margin-left:0px;border-bottom:1px ridge #f2f2f2;font-family:Times New Roman;text-align:justify;}
+.li{color:white;font-family:Arial;}
+.libero{color:white;font-family:Arial;}
+
+/*about page*/
+  
+#image{background-image:url('d.jfif'); background-size:cover;background-attachment:fixed;}
+.about{text-align:center;font-size:50px;font-family:Arial;}
+.aboutus{text-align:center;font-size:25px;font-family:Arial;}
+#sub{background-image:url('w.jpg'); background-size:cover; margin-bottom:45px;padding-bottom:45px;}
+.what{font-size:35px;font-family:Arial;}
+.people{font-family:Arial;}
+.round{margin-top:140px;margin-left:40px;}
+.drop{font-size:20px; text-align:center;}
+.convenient{text-align:center;font-size:30px;}
+.despite{font-size:14px;}
+.certificate{font-size:40px;text-align:center;}
+.long{text-align:justify;}
+.does{font-size:45px;font-family:Arial;}
+.people{font-family:Arial;}
+.round1{margin-bottom:70px;margin-top:80px;margin-left:40px;}
+.why1:hover{color:rgb(51, 173, 255);}
+.why1{background:#ebebe0;border-radius:10px;}
+
+/*service*/
+#sdetail{background-image:url('u.jpg');background-size:cover;background-attachment:fixed;font-family:Arial;}
+
+/*contact*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea, email {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*paging*/
+.bs-example{
+        margin: 35px;
+		margin-left:150px;
+    }
+
+#regular{background:#33adff;}
+.faq{font-size:65px;font-family:Arial;color:white;}
+
+/*price*/
+#pricedetail{background-image:url('u.jpg'); background-size:cover;}
+#sdt{background-image:url('slide4.jpg'); background-size:cover;background-attachment:fixed;}
+/*our blog*/
+#ob{background-image:url('t2.jpg'); background-size:cover;background-attachment:fixed;}
+
+/*practice*/
+#practiceheader{background-image:url('g4.jpg');}
+.person:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
